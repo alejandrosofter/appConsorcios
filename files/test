@@ -1,0 +1,17 @@
+#!/bin/bash
+COMANDO="/usr/bin/nslookup $1";
+urls[0]="www.utesa2.com.ar";
+i=1
+while [ $i -le 1000 ]
+do
+t=$RANDOM%5;
+echo -n "Probando contra ${urls[$t]}....";
+COMANDO="/usr/bin/nslookup ${urls[$t]} $1";
+START=$(date +%s);
+$COMANDO > /dev/null 2>&1;
+END=$(date +%s);
+DIFF=$(( $END - $START ))
+echo "Resolver ${urls[$t]} con el DNS $1 tarda $DIFF segundos";
+((i++))
+sleep 0.5;
+done

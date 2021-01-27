@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Navicat Premium
+Exec=env WINEPREFIX="/home/alejandro/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/alejandro/.wine/dosdevices/c:/users/Public/Escritorio/Navicat\\ Premium.lnk
+Type=Application
+StartupNotify=true
+Path=/home/alejandro/.wine/dosdevices/c:/Program Files/PremiumSoft/Navicat Premium
+Icon=A69B_navicat.0

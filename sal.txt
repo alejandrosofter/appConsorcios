@@ -1,0 +1,1 @@
+/usr/local/bin/wkhtmltopdf --encoding utf-8 gastos_1575642250.html files/gastos_1575642250.pdf
